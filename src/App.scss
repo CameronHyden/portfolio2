@@ -1,2 +1,24 @@
 @use "../styles/reset" as *;
 @use "../styles/typography" as *;
+
+.App {
+  height: 100vh;
+  .website-sections {
+    width: 100%;
+    height: calc(100vh - 70px);
+    background-color: lightsalmon;
+    position: relative;
+    top: 70px;
+    scroll-snap-type: y mandatory;
+    scrollbar-width: none; //firefox
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    > * {
+      width: 100vw;
+      height: calc(100vh - 70px);
+      scroll-snap-align: start;
+    }
+  }
+}
