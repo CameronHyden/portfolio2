@@ -1,4 +1,4 @@
-@use "../../../styles/global.scss" as *;
+@use "../../../styles/variables.scss" as *;
 
 .navbar-container {
   background-color: white;
@@ -7,7 +7,8 @@
   height: 70px;
   position: fixed;
   top: 0;
-  z-index: 2;
+  z-index: 3;
+  transition: all 1s ease;
 
   .navbar-wrapper {
     padding: 10px 30px;
