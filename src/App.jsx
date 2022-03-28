@@ -1,6 +1,6 @@
 import "./App.scss";
 import Navbar from "./components/navbar/Navbar";
-import Intro from "./components/intro/Intro";
+import Intro from "./components/Intro/Intro";
 import Portfolio from "./components/portfolio/portfolio";
 import Projects from "./components/projects/Projects";
 import References from "./components/references/References";
