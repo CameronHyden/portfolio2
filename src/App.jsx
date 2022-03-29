@@ -1,7 +1,6 @@
 import "./App.scss";
 import Navbar from "./components/navbar/Navbar";
 import Intro from "./components/Intro/Intro";
-import Portfolio from "./components/portfolio/portfolio";
 import Projects from "./components/projects/Projects";
 import References from "./components/references/References";
 import Contact from "./components/contact/Contact";
@@ -16,7 +15,6 @@ const App = () => {
       <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
       <div className="website-sections">
         <Intro> </Intro>
-        <Portfolio> </Portfolio>
         <Projects></Projects>
         <References></References>
         <Contact></Contact>
