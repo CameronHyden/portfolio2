@@ -39,6 +39,7 @@ const Projects = () => {
             active={selected === project.id}
             setSelected={setSelected}
             id={project.id}
+            key={project.id}
           />
         ))}
       </ul>

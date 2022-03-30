@@ -11,11 +11,6 @@ const Menu = ({ menuOpen, setMenuOpen }) => {
           </a>
         </li>
         <li onClick={() => setMenuOpen(false)}>
-          <a className="sideBar-links--link" href="#portfolio">
-            Portfolio
-          </a>
-        </li>
-        <li onClick={() => setMenuOpen(false)}>
           <a className="sideBar-links--link" href="#projects">
             Projects
           </a>

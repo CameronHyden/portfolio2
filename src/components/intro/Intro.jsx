@@ -1,6 +1,5 @@
 import "./Intro.scss";
 import Me from "../../assets/images/businessman.png";
-import down from "../../assets/images/down.png";
 import { init } from "ityped";
 import { useEffect, useRef } from "react";
 
@@ -31,9 +30,6 @@ const Intro = () => {
             Full stack <span id="textRef" ref={textRef}></span>
           </h3>
         </div>
-        {/* <a className="downArrow" href="#portfolio">
-          <img src={down} alt="" />
-        </a> */}
       </div>
     </div>
   );

@@ -1,5 +1,6 @@
+@use "../../../styles/variables" as *;
 .intro {
-  background-color: white;
+  background-color: $secondary-color;
   display: flex;
   .left {
     flex: 0.5;
@@ -7,7 +8,7 @@
     .imageContainer {
       width: 700px;
       height: 700px;
-      background-color: crimson;
+      background-color: #40916c;
       border-radius: 50%;
       display: flex;
       align-items: flex-end;
@@ -40,7 +41,7 @@
         font-size: 2rem;
         span {
           font-size: inherit;
-          color: crimson;
+          color: #d90429;
         }
       }
     }
