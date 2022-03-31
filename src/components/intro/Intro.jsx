@@ -1,5 +1,4 @@
 import "./Intro.scss";
-import Me from "../../assets/images/businessman.png";
 import { init } from "ityped";
 import { useEffect, useRef } from "react";
 
@@ -18,8 +17,16 @@ const Intro = () => {
   return (
     <div className="intro" id="intro">
       <div className="left">
-        <div className="imageContainer">
-          <img className="profileImage" src={Me} alt="me" />
+        <div className="image-circle">
+          <div className="image-circle--2"></div>
+          <div className="image-circle--3"></div>
+          <div className="image-circle--4"></div>
+          <div className="image-circle--5"></div>
+          <div className="image-circle--6"></div>
+          <div className="image-circle--7"></div>
+          <div className="image-circle--8"></div>
+          <div className="image-circle--8"></div>
+          <div className="image-circle--9"></div>
         </div>
       </div>
       <div className="right">

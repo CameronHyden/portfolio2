@@ -5,17 +5,56 @@
   .left {
     flex: 0.5;
     overflow: hidden;
-    .imageContainer {
+    .image-circle {
       width: 700px;
+
       height: 700px;
-      background-color: #40916c;
       border-radius: 50%;
-      display: flex;
-      align-items: flex-end;
+      display: grid;
       float: right;
-      .profileImage {
-        width: 100%;
-        height: 80%;
+      grid-area: repeat(3 1fr);
+      grid-template-areas:
+        "one two three"
+        "four five six"
+        "seven eight eight";
+      &--2 {
+        background-color: $secondary-circle-color;
+        border-radius: 50%;
+        height: 70%;
+        width: 70%;
+        align-self: flex-end;
+        justify-self: flex-end;
+        grid-area: one;
+      }
+      &--3 {
+        grid-area: two;
+      }
+      &--4 {
+        grid-area: three;
+      }
+      &--5 {
+        grid-area: four;
+      }
+      &--6 {
+        grid-area: five;
+      }
+      &--7 {
+        background-color: $secondary-circle-color;
+        border-radius: 50%;
+        height: 40%;
+        width: 40%;
+        grid-area: six;
+      }
+      &--8 {
+        grid-area: seven;
+        background-color: $secondary-circle-color;
+        border-radius: 50%;
+        height: 45%;
+        width: 45%;
+        justify-self: flex-end;
+      }
+      &--9 {
+        grid-area: eight;
       }
     }
   }
