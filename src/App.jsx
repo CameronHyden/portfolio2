@@ -2,11 +2,10 @@ import "./App.scss";
 import Navbar from "./components/navbar/Navbar";
 import Intro from "./components/Intro/Intro";
 import Projects from "./components/projects/Projects";
-import References from "./components/references/References";
 import Contact from "./components/contact/Contact";
 import { useState } from "react";
 import Menu from "./components/menu/Menu";
-
+import Carousel from "./components/Carousel/Carousel";
 const App = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   return (
@@ -16,7 +15,7 @@ const App = () => {
       <div className="website-sections">
         <Intro> </Intro>
         <Projects></Projects>
-        <References></References>
+        <Carousel></Carousel>
         <Contact></Contact>
       </div>
     </div>
