@@ -13,22 +13,28 @@ const Carousel = () => {
       id: "1",
       icon: Git,
       title: "Alien invaders",
-      desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. ",
+      desc: "An alien invader style shooter created with vanilla JS, SASS and HTML.",
       img: Game,
+      url: "https://github.com/CameronHyden/java-script-miniGame",
+      liveSite: "https://cameronhyden.github.io/java-script-miniGame/",
     },
     {
       id: "2",
       icon: Git,
       title: "JavaScript calculator",
-      desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      desc: " A functioning calculator created with JS,SASS and HTML, tested with cypress",
       img: Calculator,
+      url: "https://github.com/CameronHyden/calculator-java",
+      liveSite: "https://cameronhyden.github.io/calculator-java/",
     },
     {
       id: "3",
       icon: Git,
       title: "BrewDog API",
-      desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      desc: " A BrewDog beer finder application created using their API through REACT",
       img: BrewDog,
+      url: "https://github.com/CameronHyden/punk-api",
+      liveSite: "https://cameronhyden.github.io/punk-api/",
     },
   ];
 
@@ -51,11 +57,15 @@ const Carousel = () => {
               <div className="carousel-left">
                 <div className="carousel-leftContainer">
                   <div className="carousel-imgContainer">
-                    <img src={d.icon} alt="" />
+                    <a href={d.url} target="_blank">
+                      <img src={d.icon} alt="" />
+                    </a>
                   </div>
                   <h2>{d.title}</h2>
                   <p>{d.desc}</p>
-                  <span>projects</span>
+                  <a href={d.liveSite} target="_blank">
+                    <span>projects</span>
+                  </a>
                 </div>
               </div>
               <div className="carousel-right">

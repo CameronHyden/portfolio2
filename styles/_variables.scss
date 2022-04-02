@@ -18,3 +18,8 @@ $secondary-circle-color: #74c69d;
     @content;
   }
 }
+@mixin mobileMin {
+  @media (min-width: #{$tablet-breakpoint}) {
+    @content;
+  }
+}
