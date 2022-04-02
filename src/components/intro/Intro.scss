@@ -2,16 +2,18 @@
 .intro {
   background-color: $secondary-color;
   display: flex;
+  @include mobile {
+    flex-direction: column;
+    align-items: center;
+  }
   .left {
     flex: 0.5;
     overflow: hidden;
     .image-circle {
       width: 700px;
-
       height: 700px;
       border-radius: 50%;
       display: grid;
-      float: right;
       grid-area: repeat(3 1fr);
       grid-template-areas:
         "one two three"
@@ -68,16 +70,29 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
+      @include mobile {
+        padding-left: 0;
+        align-items: center;
+      }
 
       &--greeting {
         font-size: 2.5rem;
+        @include mobile {
+          font-size: 1rem;
+        }
       }
       &--name {
         font-size: 4rem;
         margin: 1rem 0;
+        @include mobile {
+          font-size: 2rem;
+        }
       }
       &--role {
         font-size: 2rem;
+        @include mobile {
+          font-size: 1.5rem;
+        }
         span {
           font-size: inherit;
           color: #d90429;

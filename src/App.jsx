@@ -1,7 +1,6 @@
 import "./App.scss";
 import Navbar from "./components/navbar/Navbar";
 import Intro from "./components/Intro/Intro";
-import Projects from "./components/projects/Projects";
 import Contact from "./components/contact/Contact";
 import { useState } from "react";
 import Menu from "./components/menu/Menu";
@@ -14,7 +13,6 @@ const App = () => {
       <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
       <div className="website-sections">
         <Intro> </Intro>
-        <Projects></Projects>
         <Carousel></Carousel>
         <Contact></Contact>
       </div>

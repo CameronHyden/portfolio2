@@ -11,15 +11,15 @@ const Menu = ({ menuOpen, setMenuOpen }) => {
           </a>
         </li>
         <li onClick={() => setMenuOpen(false)}>
-          <a className="sideBar-links--link" href="#projects">
+          <a className="sideBar-links--link" href="#carousel">
             Projects
           </a>
         </li>
-        <li onClick={() => setMenuOpen(false)}>
+        {/* <li onClick={() => setMenuOpen(false)}>
           <a className="sideBar-links--link" href="#references">
             References
           </a>
-        </li>
+        </li> */}
         <li onClick={() => setMenuOpen(false)}>
           <a className="sideBar-links--link" href="#contact">
             Contact

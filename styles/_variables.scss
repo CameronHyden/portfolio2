@@ -12,3 +12,9 @@ $main-circle-color: #40916c;
 $secondary-circle-color: #74c69d;
 
 // #15023a;
+
+@mixin mobile {
+  @media (max-width: #{$tablet-breakpoint}) {
+    @content;
+  }
+}
