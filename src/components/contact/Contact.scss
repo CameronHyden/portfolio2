@@ -5,6 +5,10 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
+  @include mobile {
+    display: flex;
+    flex-direction: column;
+  }
 
   &-image {
     height: 100%;
@@ -27,12 +31,23 @@
     @include mobileMin {
       font-size: 1.2rem;
     }
+    @include mobile {
+      align-items: flex-start;
+      padding: 3rem;
+    }
     p {
       border-bottom: 2px solid $secondary-circle-color;
+      .icon {
+        width: 20px;
+        height: 20px;
+      }
     }
   }
   #image {
-    width: auto;
+    width: 80%;
     height: auto;
+    @include mobile {
+      width: 50%;
+    }
   }
 }

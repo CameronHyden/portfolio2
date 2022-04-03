@@ -1,5 +1,6 @@
 import "./Contact.scss";
 import me from "../../assets/images/me.png";
+import linkIn from "../../assets/images/linkedin.png";
 
 import React from "react";
 
@@ -17,7 +18,13 @@ export const Contact = () => {
           <br />
           Thankfully I have been able to explore all in an abundance during the
           _nology programming course, where I have developed the skills to
-          become a valuable full-stack software engineer.
+          become a valuable full-stack software engineer.{" "}
+          <a
+            href="https://www.linkedin.com/in/cameron-hyden-730669116/"
+            target="blank"
+          >
+            <img className="icon" src={linkIn} alt="" />
+          </a>
         </p>
       </div>
     </div>

@@ -22,7 +22,7 @@ const Menu = ({ menuOpen, setMenuOpen }) => {
         </li> */}
         <li onClick={() => setMenuOpen(false)}>
           <a className="sideBar-links--link" href="#contact">
-            Contact
+            About me
           </a>
         </li>
       </ul>

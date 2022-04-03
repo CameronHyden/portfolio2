@@ -5,6 +5,7 @@ import Game from "../../assets/images/game.png";
 import Calculator from "../../assets/images/calculator.png";
 import BrewDog from "../../assets/images/brewDog.png";
 import Git from "../../assets/images/github.png";
+import Morse from "../../assets/images/morse.png";
 
 const Carousel = () => {
   const [currentSlider, setCurrentSlider] = useState(0);
@@ -36,11 +37,20 @@ const Carousel = () => {
       url: "https://github.com/CameronHyden/punk-api",
       liveSite: "https://cameronhyden.github.io/punk-api/",
     },
+    {
+      id: "4",
+      icon: Git,
+      title: "Morse code translator",
+      desc: " A morse code translator, made with javaScript. Functionality to translate morse to english",
+      img: Morse,
+      url: "https://github.com/CameronHyden/morse-code-translator-",
+      liveSite: "https://cameronhyden.github.io/morse-code-translator-/",
+    },
   ];
 
   const handleClick = (direction) => {
     direction === "left"
-      ? setCurrentSlider(currentSlider > 0 ? currentSlider - 1 : 2)
+      ? setCurrentSlider(currentSlider > 0 ? currentSlider - 1 : 3)
       : setCurrentSlider(
           currentSlider < data.length - 1 ? currentSlider + 1 : 0
         );
@@ -64,7 +74,7 @@ const Carousel = () => {
                   <h2>{d.title}</h2>
                   <p>{d.desc}</p>
                   <a href={d.liveSite} target="_blank">
-                    <span>projects</span>
+                    <span>Live Site</span>
                   </a>
                 </div>
               </div>

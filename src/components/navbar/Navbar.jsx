@@ -9,7 +9,7 @@ const Navbar = ({ menuOpen, setMenuOpen }) => {
             _Nology
           </a>
           <div className="link-container">
-            <p className="icon">0781765168</p>
+            {/* <p className="icon">0781765168</p> */}
           </div>
           <div className="link-container">
             <p className="icon">camh.hyden@gmail.com</p>
