@@ -6,6 +6,7 @@ import Calculator from "../../assets/images/calculator.png";
 import BrewDog from "../../assets/images/brewDog.png";
 import Git from "../../assets/images/github.png";
 import Morse from "../../assets/images/morse.png";
+import positivePup from "../../assets/images/positivePup.png";
 
 const Carousel = () => {
   const [currentSlider, setCurrentSlider] = useState(0);
@@ -46,11 +47,20 @@ const Carousel = () => {
       url: "https://github.com/CameronHyden/morse-code-translator-",
       liveSite: "https://cameronhyden.github.io/morse-code-translator-/",
     },
+    {
+      id: "5",
+      icon: Git,
+      title: "Positive Pup",
+      desc: "A 4 week client project, working in an agile team of 8 to build a new website for a puppy training company",
+      img: positivePup,
+      url: "https://github.com/nology-tech/positive-pup",
+      liveSite: "https://nology-tech.github.io/positive-pup/",
+    },
   ];
 
   const handleClick = (direction) => {
     direction === "left"
-      ? setCurrentSlider(currentSlider > 0 ? currentSlider - 1 : 3)
+      ? setCurrentSlider(currentSlider > 0 ? currentSlider - 1 : 4)
       : setCurrentSlider(
           currentSlider < data.length - 1 ? currentSlider + 1 : 0
         );
@@ -67,13 +77,13 @@ const Carousel = () => {
               <div className="carousel-left">
                 <div className="carousel-leftContainer">
                   <div className="carousel-imgContainer">
-                    <a href={d.url} target="_blank">
+                    <a href={d.url} target="_blank" rel="noreferrer">
                       <img src={d.icon} alt="" />
                     </a>
                   </div>
                   <h2>{d.title}</h2>
                   <p>{d.desc}</p>
-                  <a href={d.liveSite} target="_blank">
+                  <a href={d.liveSite} target="_blank" rel="noreferrer">
                     <span>Live Site</span>
                   </a>
                 </div>
