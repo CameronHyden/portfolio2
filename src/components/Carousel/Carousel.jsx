@@ -8,7 +8,7 @@ const Carousel = () => {
 
   const handleClick = (direction) => {
     direction === "left"
-      ? setCurrentSlider(currentSlider > 0 ? currentSlider - 1 : 4)
+      ? setCurrentSlider(currentSlider > 0 ? currentSlider - 1 : 5)
       : setCurrentSlider(
           currentSlider < data.length - 1 ? currentSlider + 1 : 0
         );

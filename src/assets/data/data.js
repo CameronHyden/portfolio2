@@ -55,8 +55,8 @@ export const data = [
   {
     id: "6",
     icon: Git,
-    title: "Positive Pup",
-    desc: "A full stack application, with spring backend application, deployed to GCP",
+    title: "My Code Log",
+    desc: "A full stack application, with spring backend integration, deployed to GCP",
     img: codeLog,
     url: "https://github.com/CameronHyden/code-log",
     liveSite: "https://cameronhyden.github.io/code-log/",
